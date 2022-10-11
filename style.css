@@ -1,0 +1,47 @@
+html, body {
+    background-color: #b75b04;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Garamond', 'Trebuchet MS';
+}
+
+header {
+    background-color: #b75b04;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+    background-color: #f5ad6b;
+}
+
+nav a {
+    float: left;
+    padding: 10px 0px;
+    margin: 0px;
+    text-decoration: none;
+    color:black;
+    width: 20%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+nav a:hover {
+    background-color: #b75b04;
+    color:rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 500px) {
+    nav a {
+        float: none;
+        display: block;
+        width:100%;
+        text-align: center;
+    }
+}
