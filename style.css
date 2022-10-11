@@ -109,3 +109,24 @@ transition: .5s ease;
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+.About-Eta {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Etina-slika {
+    background-color: blue;
+    height: 100%;
+    width: 200px;
+}
+
+.Etin-opis {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 600px;
+}
