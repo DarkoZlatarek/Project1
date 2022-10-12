@@ -34,7 +34,7 @@ header {
     float: left;
     width: 80%;
     height: 100%;
-    color: #4a4a4a;
+    color: #e7e7e7;
     font-family: 'Impact';
 }
 
@@ -53,7 +53,7 @@ nav {
     width: 100%;
     margin: auto;
     overflow: auto;
-    background-color: #4a4a4a;
+    background-color: #e7e7e7;
 }
 
 nav a {
@@ -70,7 +70,7 @@ nav a {
 
 nav a:hover {
     background-color: #000000;
-    color:#4a4a4a;
+    color:#e7e7e7;
 }
 
 @media only screen and (max-width: 500px) {
