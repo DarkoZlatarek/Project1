@@ -1,11 +1,10 @@
-html, body {
+html {
     background-color: #353535;
-    margin: 0;
-
 }
 
 body {
     font-family: 'Garamond', 'Trebuchet MS';
+    margin: auto;
 }
 
 header {
@@ -35,7 +34,6 @@ header {
     width: 80%;
     height: 100%;
     color: #e7e7e7;
-    font-family: 'Impact';
 }
 
 .gallery-name div {
@@ -46,7 +44,7 @@ header {
 
 h1 {
     margin: auto;
-    font-size: 10vw;
+    font-size: 9vw;
 }
 
 nav {
@@ -61,6 +59,7 @@ nav a {
     padding: 10px 0px;
     margin: 0px;
     text-decoration: none;
+    background-image: linear-gradient(to bottom, #000000, #e7e7e7);
     color:black;
     width: 20%;
     text-align: center;
@@ -69,8 +68,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #000000;
     color:#e7e7e7;
+    background-image: linear-gradient(to bottom, #000000, #000000);
 }
 
 @media only screen and (max-width: 500px) {
@@ -90,7 +89,7 @@ h2 {
 }
 
 #Art {
-    background-color: #6e5741;
+    background-color: #e7e7e7;
     margin-top: 0px;
 }
 
@@ -107,26 +106,25 @@ h2 {
 
 .big-box a {
     height: 474px;
-    margin-top: 10px;
+    padding: 30px 0;
 }
 
 .box {
-position: relative;
-float: left;
-margin: 0 25px;
+    position: relative;
+    float: left;
+    margin: 0px 25px;
 }
 
 .slide {
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-background-color: rgba(255, 255, 255, 0.75);
-overflow: hidden;
-width: 100%;
-height: 0%;
-transition: .5s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(188, 188, 188, 0.75);
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: .5s ease;
 }
 
 .box:hover .slide {
@@ -152,7 +150,8 @@ transition: .5s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px 0;
+    background-color: #e7e7e7;
 }
 
 .Etina-slika {
@@ -164,7 +163,13 @@ transition: .5s ease;
 .Etin-opis {
     background-color: rgb(255, 255, 255);
     height: 100%;
-    width: 600px;
+    width: 40%;
+}
+
+h3 {
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 #Events {
