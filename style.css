@@ -156,9 +156,18 @@ h2 {
 }
 
 .Etina-slika {
-    background-color: blue;
-    height: 100%;
+    background-color: #c40000;
+    height: 200px;
     width: 200px;
+    display: flex;
+}
+
+.Etina-slika img {
+    height: 196px;
+    width: 196px;
+    border: 2px solid #000000;
+    object-fit: contain;
+    justify-content: center;
 }
 
 .Etin-opis {
