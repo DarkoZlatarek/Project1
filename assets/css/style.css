@@ -157,11 +157,11 @@ hr {
 }
 
 .Etina-slika {
-    background-color: #c40000;
-    height: 196px;
-    width: 196px;
+    height: 200px;
+    width: 200px;
     border: 2px solid #000000;
     display: flex;
+    box-sizing: border-box;
 }
 
 .Etina-slika img {
