@@ -273,17 +273,3 @@ footer {
     height: 50px;
     font-size: 20px;
 }
-
-.footer-copyright {
-    float: left;
-    padding-left: 20px;
-}
-
-.footer-span-right {
-    float: right;
-    padding-right: 20px;
-}
-
-.footer-span {
-    padding-top: 16px;
-}
