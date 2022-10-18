@@ -24,8 +24,8 @@
             height: 500px;
         }
 
-        .photo-gallery {
-            margin-top: 30px;
+        .top-photo-gallery {
+            width: 100%;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -33,8 +33,11 @@
 
         .photo {
             float: left;
-            padding: 0 16px;
             margin: 0 auto;
+        }
+        
+        .photo p {
+            margin-bottom: 30px;
         }
 
     </style>
@@ -62,7 +65,7 @@
 
     <section class="photo-gallery">
 
-        <div>
+        <div class="top-photo-gallery">
             <div class="photo">
                 <img src="assets/images/abstract/abstract_Dora.jpg" alt="Abstract painting of a mongrel dog called Dora">
                 <br><p>Dora Dora Dora</p>
@@ -83,7 +86,7 @@
 
     <section class="photo-gallery">
 
-        <div>
+        <div class="top-photo-gallery">
 
             <div class="photo">
                 <img src="assets/images/abstract/abstract_Luna.jpg" alt="Abstract painting of a golden retriever dog called Luna">

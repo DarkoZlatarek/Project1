@@ -15,7 +15,7 @@
 
     <style>
 
-        body {
+body {
             text-align: center;
         }
 
@@ -24,27 +24,20 @@
             height: 500px;
         }
 
-        th {
-            font-size:2em;
-            background-color: brown;
-            padding: 20px;
-        }
-
-        table {
-            background-color: transparent;
+        .top-photo-gallery {
             width: 100%;
-            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
-        td {
-            padding: 20px;
+        .photo {
+            float: left;
+            margin: 0 auto;
         }
-
-        td p {
-            font-size: 1.5em;
-            margin-top: 0px;
-            padding: 10px;
-            background-color: blue;
+        
+        .photo p {
+            margin-bottom: 30px;
         }
 
     </style>
@@ -68,38 +61,50 @@
         <a href="index.html#Contact" aria-label="Go to contact section">Contact</a>
 	</nav>
  
+    <h2>Abstract Photo Gallery</h2>
 
-    <table>
-        <tr>
-            <th colspan="3">Realistic Photo Gallery</th>
-        </tr>
-    
-        <tr>
-            <td colspan="3">text text text text text text text text text text text text text text text text text text text text</td>
-        </tr>
-    
-        <tr>
-            <td><img src="assets/images/realistic/realistic_Bo.jpg" alt="Realistic painting of a mongrel dog called Dora">
-                <br><p>Bo Bo Bo Bo</p></td>
-    
-            <td><img src="assets/images/realistic/realistic_Khan.jpg" alt="Realistic painting of two dogs">
-                <br><p>Khan Khan Khan</p></td>
-    
-            <td><img src="assets/images/realistic/realistic_Maxic.jpg" alt="Realistic painting of a lurcher dog called Max">
-                <br><p>Max Max Max</p></td>
-        </tr>
-    
-        <tr>
-            <td><img src="assets/images/realistic/realistic_puffy.jpg" alt="Realistic painting of a golden retriever dog called Luna">
-                <br><p>puffy puffy puffy</p></td>
-    
-            <td><img src="assets/images/realistic/realistic_Roxy.jpg" alt="Realistic painting of a lurcher dog called Max">
-                <br><p>Roxy Roxy Roxy</p></td>
-    
-            <td><img src="assets/images/realistic/realistic_tasm.jpg" alt="Realistic painting of labrador dog called Nero">
-                <br><p>tasmanian devil</p></td>
-        </tr>
-    </table>
+    <section class="photo-gallery">
+
+        <div class="top-photo-gallery">
+            <div class="photo">
+                <img src="assets/images/realistic/realistic_Bo.jpg" alt="Realistic painting of a stafford dog called Bo">
+                <br><p>Bo Bo Bo Bo</p>
+            </div>
+
+            <div class="photo">
+                <img src="assets/images/realistic/realistic_Khan.jpg" alt="Realistic painting of a german shepherd dog called Khan">
+                <br><p>Khan Khan Khan</p>
+            </div>
+
+            <div class="photo">
+                <img src="assets/images/realistic/realistic_Maxic.jpg" alt="Realistic painting of a lurcher dog called Max">
+                <br><p>Max Max Max</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="photo-gallery">
+
+        <div class="top-photo-gallery">
+
+            <div class="photo">
+                <img src="assets/images/realistic/realistic_puffy.jpg" alt="Realistic painting of a cockerpoo dog called Puffy">
+                <br><p>puffy puffy puffy</p>
+            </div>
+
+            <div class="photo">
+                <img src="assets/images/realistic/realistic_Roxy.jpg" alt="Realistic painting of a stafford dog called Roxy">
+                <br><p>Roxy Roxy Roxy</p>
+            </div>
+
+            <div class="photo">
+                <img src="assets/images/realistic/realistic_tasm.jpg" alt="Realistic painting of white tasmanian devil">
+                <br><p>tasmanian devil</p>
+            </div>
+
+        </div>
+    </section>
 
     <hr class="hr-footer">
 
