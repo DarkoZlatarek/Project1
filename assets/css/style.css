@@ -146,6 +146,14 @@ hr {
     box-shadow: inset 0 12px 12px -12px #000000;
   }
 
+  .hr-footer {
+    background-color: #000000;
+    height: 15px;
+    border: 0;
+    margin: 0;
+    box-shadow: inset 0px 12px 12px -12px #e7e7e7;
+  }
+
 .About-Eta {
     width: 100%;
     height: 200px;
@@ -269,7 +277,37 @@ iframe {
 }
 
 footer {
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
+    height: 80px;
+    display: flex;
+    background-color: #000000;
+    font-size: 2vw;
+    margin: 0%;
+}
+
+.copyright {
+    float: left;
+    width: 50%;
+    color:#e7e7e7;
+    display: flex;
+}
+
+.copyright-text {
+text-align: left;
+margin: auto 0;
+}
+
+footer ul {
+    float: right;
+    width: 50%;
+    text-align: right
+}
+
+footer ul > li {
+    display: inline;
+}
+
+footer i {
+    margin: auto;
+    padding-right: 30px;
+    color:#e7e7e7
 }
