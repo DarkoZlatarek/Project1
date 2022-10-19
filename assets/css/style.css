@@ -7,6 +7,8 @@ body {
     margin: auto;
 }
 
+ /*Header*/
+
 header {
     background-color: #000000;
     text-align: center;
@@ -47,6 +49,8 @@ h1 {
     font-size: 9vw;
 }
 
+ /*Nav-bar*/
+
 nav {
     width: 100%;
     margin: auto;
@@ -80,6 +84,8 @@ nav a:hover {
         text-align: center;
     }
 }
+
+ /*Art*/
 
 #Art {
     background-color: #e7e7e7;
@@ -154,6 +160,8 @@ hr {
     box-shadow: inset 0px 12px 12px -12px #e7e7e7;
   }
 
+  /*About the Artist*/
+
 .About-Eta {
     width: 100%;
     height: 200px;
@@ -183,6 +191,7 @@ hr {
     height: 100%;
     width: 40%;
     overflow: auto;
+    font-family: 'Garamond','Verdana', 'Georgia', 'sans-serif';
 }
 
 h4 {
@@ -199,16 +208,17 @@ h4 {
 h3 {
     float: left;
     font-size: 2em;
-    margin: 20px 0;
+    margin: 0;
     padding: 20px;
-    color: #e7e7e7;
-    background-color: rgb(0, 0, 0);
+    color: #000000;
 }
+
+ /*Exhibitions*/
 
 #Exhibitions {
     width: 100%;
     background-color: #e7e7e7;
-    padding: 30px 0;
+    padding: 0 0 30px 0;
 }
 
 .Upcoming-exhibitions {
@@ -219,6 +229,7 @@ h3 {
     flex-wrap: wrap;
     overflow: hidden;
     margin: auto;
+    font-family: 'Garamond','Verdana', 'Georgia', 'sans-serif';
 }
 
 .Art-Show-left , .Art-Show-center, .Art-Show-right {
@@ -255,12 +266,15 @@ h3 {
    text-overflow: unset;
 }
 
+ /*Contact*/
+
 .Contact {
     width: 100%;
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 0 30px 0;
 }
 
 .Address {
@@ -275,6 +289,8 @@ iframe {
     width: 600px;
     height: 300px
 }
+
+ /*Footer*/
 
 footer {
     height: 80px;
