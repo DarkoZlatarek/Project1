@@ -7,7 +7,7 @@ body {
     margin: auto;
 }
 
- /*Header*/
+ /*---------------------------------------------------Header----------------------------------------------*/
 
 header {
     background-color: #000000;
@@ -49,7 +49,7 @@ h1 {
     font-size: 9vw;
 }
 
- /*Nav-bar*/
+ /*-----------------------------------------------------Nav-bar----------------------------------------------*/
 
 nav {
     width: 100%;
@@ -85,7 +85,7 @@ nav a:hover {
     }
 }
 
- /*Art*/
+ /*-----------------------------------------------------Art--------------------------------------------------*/
 
 #Art {
     background-color: #e7e7e7;
@@ -152,15 +152,8 @@ hr {
     box-shadow: inset 0 12px 12px -12px #000000;
   }
 
-  .hr-footer {
-    background-color: #000000;
-    height: 15px;
-    border: 0;
-    margin: 0;
-    box-shadow: inset 0px 12px 12px -12px #e7e7e7;
-  }
 
-  /*About the Artist*/
+  /*----------------------------------------About the Artist------------------------------------------*/
 
 .About-Eta {
     width: 100%;
@@ -194,9 +187,8 @@ hr {
     font-family: 'Garamond','Verdana', 'Georgia', 'sans-serif';
 }
 
-h4 {
+h3 {
     font-size: 1.5em;
-    margin: 0%;
     padding-left: 20px;
     padding-top: 10px;
 }
@@ -205,7 +197,7 @@ h4 {
     margin: 20px;
 }
 
-h3 {
+h2 {
     float: left;
     font-size: 2em;
     margin: 0;
@@ -213,7 +205,7 @@ h3 {
     color: #000000;
 }
 
- /*Exhibitions*/
+ /*-------------------------------------------------Exhibitions------------------------------------------------*/
 
 #Exhibitions {
     width: 100%;
@@ -266,7 +258,7 @@ h3 {
    text-overflow: unset;
 }
 
- /*Contact*/
+ /*-------------------------------------------------Contact----------------------------------------------*/
 
 .Contact {
     width: 100%;
@@ -283,34 +275,30 @@ h3 {
     height: 100%;
     width: 250px;
     float: left;
-    text-align: center;
     color: #e7e7e7;
-    font-size: 1.5em;
+    font-size: 1.12em;
+    display: table;
 }
 
 .Address p {
     width: 100%;
     height: 100%;
-    margin: auto 0;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 #map {
-    position: relative;
-    overflow: hidden;
     width: 500px;
+    height: 200px;
 }
 
 iframe {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     width: 100%;
     height: 100%;
 }
 
- /*Footer*/
+ /*--------------------------------------------------Footer------------------------------------------------*/
 
 footer {
     height: 80px;
@@ -351,4 +339,12 @@ footer ul > li {
 footer ul i {
     padding-right: 30px;
     color:#e7e7e7
+}
+
+.hr-footer {
+    background-color: #000000;
+    height: 15px;
+    border: 0;
+    margin: 0;
+    box-shadow: inset 0px 12px 12px -12px #e7e7e7;
 }
