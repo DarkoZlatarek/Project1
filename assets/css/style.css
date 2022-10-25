@@ -60,7 +60,7 @@ nav {
 
 nav a {
     float: left;
-    padding: 10px 0px;
+    padding: 20px 0px 10px;
     margin: 0px;
     text-decoration: none;
     background-image: linear-gradient(to bottom, #000000, #e7e7e7);
