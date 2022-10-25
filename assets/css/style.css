@@ -224,7 +224,7 @@ h2 {
     font-family: 'Garamond','Verdana', 'Georgia', 'sans-serif';
 }
 
-.art-Show-left , .art-Show-center, .art-Show-right {
+.art-show-left , .art-show-center, .art-show-right {
     float: left;
     width: 450px;
     display: flex;
