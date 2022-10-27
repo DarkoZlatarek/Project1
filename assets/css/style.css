@@ -76,11 +76,12 @@ nav a:hover {
     background-image: linear-gradient(to bottom, #000000, #000000);
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 650px) {
     nav a {
         font-size: 20px;
     }
 }
+
 @media only screen and (max-width: 520px) {
     nav a {
         font-size: 16px;
@@ -355,4 +356,55 @@ footer ul i {
     border: 0;
     margin: 0;
     box-shadow: inset 0px 12px 12px -12px #e7e7e7;
+}
+
+ /*--------------------------------------------------Photo gallery------------------------------------------------*/
+
+h4 {
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    margin: 15px;
+}
+
+@media only screen and (max-width: 650px) {
+    h4 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    h4 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    h4 {
+        font-size: 25px;
+    }
+}
+
+img {
+width: 21vw;
+height: 28vw;
+}
+
+.photo-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo {
+float: left;
+margin: 10px auto;
+padding: 3%;
+border: 2px solid #000000;
+}
+
+.photo p {
+    margin-bottom: 30px;
+    font-family: 'Garamond','Verdana', 'Georgia', 'sans-serif';
 }
