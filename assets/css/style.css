@@ -92,9 +92,9 @@ nav a:hover {
     nav a {
         float: none;
         display: block;
-        width:100%;
+        width: 100%;
         text-align: center;
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -234,11 +234,16 @@ h2 {
 
 .art-show-left , .art-show-center, .art-show-right {
     float: left;
-    width: 450px;
+    width: 400px;
     display: flex;
     flex-direction: column;
-    margin: 0;
     justify-content: center;
+}
+
+@media only screen and (max-width: 420px) {
+    .art-show-left , .art-show-center, .art-show-right {
+        width: 300px;
+    }
 }
 
 .art-show-left div, .art-show-center div, .art-show-right div {
@@ -252,6 +257,11 @@ h2 {
     height: 250px;
 }
 
+@media only screen and (max-width: 420px) {
+    .upcoming-exhibitions img {
+        height: 180.5px;
+    }
+}
 
 .upcoming-exhibitions p {
     font-size: 1.12em;
