@@ -177,9 +177,16 @@ hr {
     background-color: #e7e7e7;
 }
 
+@media only screen and (max-width: 600px) {
+    .about-eta {
+        flex-direction: column;
+    }
+}
+
 .etina-slika {
     border: 2px solid #000000;
-    display: flex;
+    width: 225px;
+    height: 225px;
 }
 
 .etina-slika img {
@@ -190,9 +197,14 @@ hr {
 
 .etin-opis {
     background-color: rgb(255, 255, 255);
-    height: 100%;
-    width: 40%;
+    width: 55%;
     font-family: 'Garamond','Verdana', 'Georgia', 'sans-serif';
+}
+
+@media only screen and (max-width: 600px) {
+    .etin-opis {
+        width: 95%;
+    }
 }
 
 h3 {
