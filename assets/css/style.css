@@ -281,13 +281,11 @@ h2 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    transition-delay: 2s;
 }
 
 .upcoming-exhibitions p:hover {
    white-space: normal;
    overflow: visible;
-   transition-delay: 2s;
 }
 
  /*-------------------------------------------------Contact----------------------------------------------*/
