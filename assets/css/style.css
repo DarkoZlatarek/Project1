@@ -397,8 +397,8 @@ h4 {
 }
 
 img {
-width: 21vw;
-height: 28vw;
+    width: 19vw;
+    height: 25vw;
 }
 
 .photo-gallery {
@@ -410,8 +410,8 @@ height: 28vw;
 
 .photo {
 float: left;
-margin: 10px auto;
-padding: 3%;
+margin: 20px auto;
+padding: 2.5%;
 border: 2px solid #000000;
 }
 
