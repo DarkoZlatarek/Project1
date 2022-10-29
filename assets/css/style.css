@@ -401,6 +401,7 @@ h2 {
     border: 2px solid black;
     cursor: pointer;
     background-color: white;
+    color: #000000;
 }
 
 .submit-button:hover {
