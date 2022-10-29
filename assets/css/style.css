@@ -454,6 +454,18 @@ h4 {
     text-align:center;
 }
 
+/*--------------------------------------------thank you page----------------------------------------------*/
+
+.thank-you-div {
+    margin: 100px auto;
+    width: 100%;
+}
+
+.thank-you-header, .thank-you-text {
+    text-align: center;
+    padding: 20px 10%;
+}
+
 /*--------------------------------------------------Media--------------------------------------------------*/
 
 @media only screen and (max-width: 650px) {
