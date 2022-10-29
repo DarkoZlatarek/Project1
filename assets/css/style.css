@@ -125,6 +125,17 @@ nav a:hover {
     padding-top: 3vw;
 }
 
+@media only screen and (max-width: 420px) {
+    #art img {
+        width: 30vw;
+        height: 40vw;
+    }
+
+    .big-box a {
+        height: 40vw;
+    }
+}
+
 .box {
     height: 100%;
     position: relative;
