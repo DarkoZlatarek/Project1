@@ -76,32 +76,6 @@ nav a:hover {
     background-image: linear-gradient(to bottom, #000000, #000000);
 }
 
-@media only screen and (max-width: 650px) {
-    nav a {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 520px) {
-    nav a {
-        font-size: 16px;
-    }
-
-    #art > p {
-        font-size: 10px;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    nav a {
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: center;
-        font-size: 16px;
-    }
-}
-
  /*-----------------------------------------------------Art--------------------------------------------------*/
 
 #art {
@@ -123,17 +97,6 @@ nav a:hover {
 .big-box a {
     height: 28vw;
     padding-top: 3vw;
-}
-
-@media only screen and (max-width: 420px) {
-    #art img {
-        width: 30vw;
-        height: 40vw;
-    }
-
-    .big-box a {
-        height: 40vw;
-    }
 }
 
 .box {
@@ -177,13 +140,6 @@ nav a:hover {
     font-size: 12px;
 }
 
-@media only screen and (max-width: 520px) {
-    #art > p {
-        font-size: 10px;
-    }
-}
-
-
 hr {
     background-color: #e7e7e7;
     height: 15px;
@@ -204,12 +160,6 @@ hr {
     background-color: #e7e7e7;
 }
 
-@media only screen and (max-width: 600px) {
-    .about-eta {
-        flex-direction: column;
-    }
-}
-
 .etina-slika {
     border: 2px solid #000000;
     width: 225px;
@@ -226,12 +176,6 @@ hr {
     background-color: rgb(255, 255, 255);
     width: 55%;
     font-family: 'Garamond','Verdana', 'Georgia', 'sans-serif';
-}
-
-@media only screen and (max-width: 600px) {
-    .etin-opis {
-        width: 95%;
-    }
 }
 
 h3 {
@@ -279,12 +223,6 @@ h2 {
     justify-content: center;
 }
 
-@media only screen and (max-width: 420px) {
-    .art-show-left , .art-show-center, .art-show-right {
-        width: 300px;
-    }
-}
-
 .art-show-left div, .art-show-center div, .art-show-right div {
     margin: 0;
     padding: 0 20px;
@@ -294,12 +232,6 @@ h2 {
 .upcoming-exhibitions img {
 	width: 100%;
     height: 257px;
-}
-
-@media only screen and (max-width: 420px) {
-    .upcoming-exhibitions img {
-        height: 185.7px;
-    }
 }
 
 .upcoming-exhibitions p {
@@ -339,13 +271,6 @@ h2 {
     right: 30px;
     top: 10px;
     border: 2px solid white;
-}
-
-@media only screen and (max-width: 420px) {
-    .more-less-btn {
-        font-size: 12px;
-  		padding: 2px 2px;
-    }
 }
 
 .exhibition1 input[type="checkbox"]:checked ~ .exhibition1-content,
@@ -443,13 +368,6 @@ h2 {
     display: table-cell;
 }
 
-
-@media only screen and (max-width: 570px) {
-    .address p {
-        font-size: 0.9em;
-    }
-}
-
 #map {
     width: 70%;
 }
@@ -476,12 +394,6 @@ footer {
     font-size: 160%;
 }
 
-@media only screen and (max-width: 667px) {
-    .copyright {
-        font-size: 3.15vw;
-    }
-}
-
 .copyright-text {
 text-align: left;
 margin: auto 2vw;
@@ -504,12 +416,6 @@ footer ul > li {
     font-size: 160%;
 }
 
-@media only screen and (max-width: 420px) {
-    footer ul > li {
-        font-size: 6vw;
-    }
-}
-
 footer ul i {
     color:#e7e7e7
 }
@@ -522,13 +428,124 @@ footer ul i {
     box-shadow: inset 0px 12px 12px -12px #e7e7e7;
 }
 
- /*--------------------------------------------------Photo gallery------------------------------------------------*/
+/*--------------------------------------------------Photo gallery------------------------------------------------*/
 
 h4 {
     text-align: center;
     font-size: 40px;
     color: #000000;
     margin: 15px;
+}
+
+.photo img {
+	width: 216px;
+	height: 288px;
+  	border: 2px solid black;
+    padding: 5%;
+}
+
+.photo-gallery {
+	display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.photo {
+    text-align:center;
+}
+
+/*--------------------------------------------------Media--------------------------------------------------*/
+
+@media only screen and (max-width: 650px) {
+    nav a {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    nav a {
+        font-size: 16px;
+    }
+
+    #art > p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    nav a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #art img {
+        width: 30vw;
+        height: 40vw;
+    }
+
+    .big-box a {
+        height: 40vw;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #art > p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-eta {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .etin-opis {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .art-show-left , .art-show-center, .art-show-right {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .upcoming-exhibitions img {
+        height: 185.7px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .more-less-btn {
+        font-size: 12px;
+  		padding: 2px 2px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .address p {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .copyright {
+        font-size: 3.15vw;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    footer ul > li {
+        font-size: 6vw;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -547,23 +564,6 @@ h4 {
     h4 {
         font-size: 25px;
     }
-}
-
-.photo img {
-	width: 216px;
-	height: 288px;
-  	border: 2px solid black;
-    padding: 5%;
-}
-
-.photo-gallery {
-	display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(3, 2fr);
-}
-
-.photo {
-    text-align:center;
 }
 
 @media only screen and (max-width: 850px) {
