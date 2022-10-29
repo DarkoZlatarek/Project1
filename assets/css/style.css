@@ -400,13 +400,13 @@ h2 {
     font-weight: 700;
     border: 2px solid black;
     cursor: pointer;
-    background-color: white;
-    color: #000000;
+    background-color: #000000;
+    color: #e7e7e7;
 }
 
 .submit-button:hover {
-    color:#e7e7e7;
-    background-color: #000000;
+    color:#000000;
+    background-color: #ffffff;
 }
 
 .address-map {
