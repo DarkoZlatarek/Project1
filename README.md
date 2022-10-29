@@ -1,108 +1,98 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Art Gallery Mazeki**
 
-Welcome Darko Zlatarek,
+Art Gallery Mazeki is an online artist gallery website where the artist is introducing herself and her artwork to the wider audience. 
+The user is able to navigate through the website to see the artwork.
+The website gives the user a list of upcoming exhibition events for them to attend.
+The user is also able to subscribe to receive future exhibition events schedule dates so they do not miss them.
+In addition, a question can be send to the artist for her to answer.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![responsive website](assets/images/readme-img/responsive_website.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## **Feature**
+* ### **The header**
+    * Featured at the top of the page, the header shows the logo of the art gallery and the name of the art gallery
+    * This section clearly tells the user to expect this webpage to be an art gallery
 
-## Gitpod Reminders
+![the header](assets/images/readme-img/the_header.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* ### **Navigation bar**
+    * Navigation links are positioned bellow the header: Home, Art, Artist, Exhibitions, Contact which link to the different sections of the same webpage
+    * Links are in gradient background going from black through grey to whitish and in black color that reverses on hover making it clear where the cursor is
 
-`python3 -m http.server`
+![the navigation bar](assets/images/readme-img/navigation_bar.png)
 
-A blue button should appear to click: _Make Public_,
+* ### **Art**
+    * Art section of the webpage gives an option to the user to choose to enter either realistic art gallery or abstract art gallery
+    * Upon hovering over the photos in this section, photos get covered with transparent grey background sliding from bottom to top and name of the gallery they would enter upon clicking
 
-Another blue button should appear to click: _Open Browser_.
+![the art section](assets/images/readme-img/art_section.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* ### **About the Artist**
+    * In about the artist section, user can see the photo of the artist and a brief description of her
 
-A blue button should appear to click: _Make Public_,
+![the artist section](assets/images/readme-img/about_the_artist.png)
 
-Another blue button should appear to click: _Open Browser_.
+* ### **Upcoming Exhibitions**
+    * In “Upcoming exhibition” section user is presented with three exhibition events that they can attend
+    * Each exhibition has its own name, photo of the location and the brief description of what they can expect if decide to attend
+    * Description text is hidden, but can be expanded upon clicking on <button>More/Less</button> located on the top right corner of each exhibition location photo
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![the exhibition section](assets/images/readme-img/exhibition_section.png)
 
-To log into the Heroku toolbelt CLI:
+* ### **Contact**
+    * In “Contact” section there is a form that the user can complete to subscribe for receiving dates for future exhibition events and/or ask the artist a question
+    * When submitting the form, user redirected to the “Thank you” page
+    * Underneath the form, user can see the address of the Art Gallery and location on the map
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![the contact section-form](assets/images/readme-img/contact_section.png)
+![the artist section-address and map](assets/images/readme-img/contact_section2.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* ### **Footer**
+    * Footer section, located at the bottom of the page, gives the user access to the gallery’s social media pages: youtube, pinterest, Instagram, twitter and facebook
+    * It is shown in footer that the artist (or the Art Gallery Mazeki) holds the copyright to the photos on the website
 
-------
+![the footer section](assets/images/readme-img/footer.png)
 
-## Release History
+## **Testing**
+* I tested the website in three different browser: Chrome, Firefox and Safari – there is an bug in Firefox browser to which I refer in “Bugs” section of this document
+* I can confirm that all the text in any of the sections (header, navigation bar, art, about the artist, exhibitions, contact and footer) is readable and easy to understand
+* I have confirmed that the form is working: entries for first and last name are required and email input only accepts emails; checkbox and textbox are optional
+* Using dev tools, I can confirm that the website is responsive to all standard width sizes
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![the form submition](assets/images/readme-img/website_submited_form.png) ![the form submition](assets/images/readme-img/submited_form.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## **Bugs**
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* In Art section I had difficulty with the .slide, it started the transition few pixels below the photos – *eventually found the issue and adjusted the padding for it*
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Social media icons in the footer did not stay in line when reducing the screen size - *this was fixed with “flex-direction: row-reverse“ *
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* Form, upon submitting was not opening the “Thank you” page but throwing Error 501 message instead - *had to change method attribute from POST to GET*
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* **Existing bug in Firefox browser** - *in exhibitions section, apart from the checkbox at the top right corner of the photos, there is another small checkbox below the photos (this is only the case in Firefox browser)*
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## **Validator testing**
+* HTML
+    * When submitting the HTML code of the index.html, abstract.html, realistic.html and thankyou.html to the official W3C validator, no errors were returned
+    ![the form submition](assets/images/readme-img/html_validator_testing.png)
+* CSS
+    * When submitting the CSS code to the official (jigsaw) validator, no errors were returned
+    ![the form submition](assets/images/readme-img/css_validator_testing.png)
+* Accessibility
+    * I can confirm that the website is accessible by running it through lighthouse in devtools
+    ![the form submition](assets/images/readme-img/accessibility_testing.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## **Deployment**
+* The website was deployed to the GitHub pages. The steps were:
+    * In the GitHub repository, I clicked on the settings button
+    * Then navigated to the Pages section
+    * There, under "Branch" in dropdown selected "main"
+    * The page then refreshed and provided the link to the completed website
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## **Content**
+* CSS code for transition in "Art" section taken from the [W3CSchools](https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_slidetop)
+* CSS code for <button>More/Less</button> in Exhibitions section from [Stack Overflow](https://stackoverflow.com/questions/59100312/single-button-to-show-hide-element-with-pure-css) community where someone already asked the question on how to write that code
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## **Media**
+* The logo image in the header was taken from [Unsplash](https://unsplash.com/photos/nazeUct7aPs)
+* Photos in the Exhibitions section was also taken from [Unsplash](https://unsplash.com/)
