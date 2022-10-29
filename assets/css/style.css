@@ -265,7 +265,7 @@ h2 {
 }
 
 .upcoming-exhibitions img {
-    width: 100%;
+	width: 100%;
     height: 257px;
 }
 
@@ -278,14 +278,55 @@ h2 {
 .upcoming-exhibitions p {
     font-size: 1.12em;
     margin: 20px auto;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
-.upcoming-exhibitions p:hover {
-   white-space: normal;
-   overflow: visible;
+.exhibition1, .exhibition2, .exhibition3 {
+    position: relative;
+}
+
+.exhibition1-content, 
+.exhibition2-content,
+.exhibition3-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    transition: .5s ease;
+}
+
+.exhibition1 input[type="checkbox"], 
+.exhibition2 input[type="checkbox"], 
+.exhibition3 input[type="checkbox"] {
+    width: 0;
+    height: 0;
+}
+
+.more-less-btn {
+    position: absolute;
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px 5px;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #000;
+    right: 30px;
+    top: 10px;
+    border: 2px solid white;
+}
+
+@media only screen and (max-width: 420px) {
+    .more-less-btn {
+        font-size: 12px;
+  		padding: 2px 2px;
+    }
+}
+
+.exhibition1 input[type="checkbox"]:checked ~ .exhibition1-content,
+.exhibition2 input[type="checkbox"]:checked ~ .exhibition2-content, 
+.exhibition3 input[type="checkbox"]:checked ~ .exhibition3-content {
+    display: block;
+    white-space: normal;
+    overflow: visible;
 }
 
  /*-------------------------------------------------Contact----------------------------------------------*/
