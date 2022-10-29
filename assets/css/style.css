@@ -466,7 +466,7 @@ h4 {
 }
 
 .photo-gallery {
-	display:grid;
+	display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(3, 2fr);
 }
