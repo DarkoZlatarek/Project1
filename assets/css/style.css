@@ -347,11 +347,14 @@ h2 {
 
  /*-------------------------------------------------Contact----------------------------------------------*/
 
-.subscription-form {
-    clear: both;
+.form-div {
     max-width: 400px;
     margin: 30px auto;
     padding: 0 10%;
+}
+
+.subscription-form {
+    clear: both;
 }
 
 .subscription-form > h5 {
@@ -373,11 +376,32 @@ h2 {
 }
 
 .subscribe {
-    float: left;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
 .feedback {
-    padding: 0 10%;
+    width: 100%;
+}
+
+.submit-div {
+    text-align: center;
+}
+
+.submit-button {
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: white;
+}
+
+.submit-button:hover {
+    color:#e7e7e7;
+    background-color: #000000;
 }
 
 .contact {
